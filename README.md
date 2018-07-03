@@ -1,7 +1,7 @@
 # iOS APP ICONS Generator
 
 ### Description
-ios-icon-generator is a shell script which aim to generate iOS APP icons esaier and simply.
+ios-icon-generator is a shell script which aim to generate iOS APP icons easier and simply.
 ![image](https://github.com/smallmuou/ios-icon-generator/blob/master/ios-icon-generator.gif)
 <pre>
 VERSION: 1.0.0
@@ -15,10 +15,10 @@ DESCRIPTION:
     dstpath - The destination path where the icons generate to.
 
     This script is depend on ImageMagick. So you must install ImageMagick first
-    You can use 'sudo brew install ImageMagick' to install it
+    You can use 'brew install ImageMagick' to install it
 
 AUTHOR:
-    Pawpaw<lvyexuwenfa100@126.com>
+    smallmuou<smallmuou@163.com>
 
 LICENSE:
     This script follow MIT license.
@@ -31,18 +31,23 @@ EXAMPLE:
 ### Usage
 1. Install ImageMagick
 	
-	Before you run this script, please check whether you had install ImageMagick. If you don't have install. Follow this:
-	<pre>
-	sudo brew install ImageMagick</pre>
+Before you run this script, please check whether you had install ImageMagick. If you don't have install. Follow this:
+
+```bash
+brew install ImageMagick
+```	
 
 2. Clone And Chmod
-	<pre>
-	git clone https://github.com/smallmuou/ios-icon-generator
-	cd ios-icon-generator
-	chmod 777 ios-icon-generator.sh
-	</pre>
+
+```bash
+git clone https://github.com/smallmuou/ios-icon-generator
+cd ios-icon-generator
+chmod 777 ios-icon-generator.sh
+```
+
 3. Run
-	<pre>
+	
+```bash
 StarnetdeMacBook-Pro:ios-icon-generator starnet$ ./ios-icon-generator.sh ~/Downloads/1024.png ~/output
 [INFO] Generate iTunesArtwork.png ...
 [INFO] Generate iTunesArtwork@2x.png ...
@@ -63,7 +68,9 @@ StarnetdeMacBook-Pro:ios-icon-generator starnet$ ./ios-icon-generator.sh ~/Downl
 [INFO] Generate Icon-72@2x.png ...
 [INFO] Generate Icon-Small-50.png ...
 [INFO] Generate Icon-Small-50@2x.png ...
-[INFO] Generate Done.</pre>
+[INFO] Generate Done.
+```
+
 PS: You can find out the icons in ~/output directory.
 
 ### Navigation bar items
@@ -71,6 +78,7 @@ There is also another shell script `ios-navbar-icon-generator.sh` to generate na
 
 ### Generic images
 With the script `os-custom-icon-generator.sh` you can generate a set of three images to use in your app (myimg.png, myimg@2.png, myimg@3.png).
+
 Use it in this way `./ios-custom-icon-generator.sh icon-big.png ~/asset_dir 100`. The third parameter is the final base size of the image: using 100, your output image.png will be 100x100 px, image@2.png 200x200 and image@3.png 300x300.
 `
 
